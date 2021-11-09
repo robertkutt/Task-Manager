@@ -6,3 +6,17 @@
   font-size: medium;
   color: grey;
 }
+
+.addButton {
+  padding: 10px;
+  border: 1px solid grey;
+  style-align: none;
+  width: 100px;
+  text-align: center;
+  color: grey;
+  background-color: lightgrey;
+}
+
+.addButton:hover {
+  background-color: grey;
+}

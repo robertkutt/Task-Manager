@@ -1,14 +1,15 @@
 <h1>Your tasks:</h1>
 
+<div class="addButton">
 <%= link_to "Add a task", new_path %>
-
+</div>
 <% @tasks.each do |item| %>
  <ul>
   <li>
     <% if item.completed == true %>
       <%= link_to "[X] #{item.title}", task_path(item) %>
     <% else %>
-     <%= link_to "[] #{item.title}", task_path(item) %>
+     <%= link_to "[X] #{item.title}", task_path(item) %>
     <% end %>
     </li>
   </ul>
